@@ -13,7 +13,7 @@
     <VBox prefHeight="849.0" prefWidth="900.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0">
       <children>
         <Label text="Enter file name:" />
-        <TextField id="textfield_input" fx:id="textfield_input_id" prefWidth="200.0" />
+        <TextField id="textfield_input" fx:id="textfield_input" prefWidth="200.0" />
         <Separator maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="42.0" prefWidth="900.0" visible="false" />
         <Label text="File content:" />
         <TextArea id="textarea" fx:id="textarea_id" prefHeight="593.0" prefWidth="900.0" wrapText="true" />
@@ -22,12 +22,12 @@
           <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="334.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
               <children>
-                <Button id="btn_load" fx:id="btn_load_id" alignment="CENTER" contentDisplay="LEFT" mnemonicParsing="false" onAction="#btn_load_OnAction" text="Load" />
+                <Button id="btn_load" fx:id="btn_load" alignment="CENTER" contentDisplay="LEFT" mnemonicParsing="false" onAction="#btn_load_OnAction" text="Load" />
               </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
               <children>
-                <Button id="btn_save" fx:id="btn_clear_id" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btn_clear_OnAction" text="Clear" textAlignment="LEFT" />
+                <Button id="btn_save" fx:id="btn_clear" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btn_clear_OnAction" text="Clear" textAlignment="LEFT" />
               </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
