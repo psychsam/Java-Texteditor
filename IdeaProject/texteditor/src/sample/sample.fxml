@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="900.0" scaleX="1.0" scaleY="1.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <VBox prefHeight="849.0" prefWidth="900.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+      <children>
+        <Label text="Enter file name:" />
+        <TextField id="textfield_input" fx:id="textfield_input_id" prefWidth="200.0" />
+        <Separator maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="42.0" prefWidth="900.0" visible="false" />
+        <Label text="File content:" />
+        <TextArea id="textarea" fx:id="textarea_id" prefHeight="593.0" prefWidth="900.0" wrapText="true" />
+        <Separator maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="23.0" prefWidth="900.0" visible="false" />
+        <GridPane>
+          <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="334.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <children>
+                <Button id="btn_load" fx:id="btn_load_id" alignment="CENTER" contentDisplay="LEFT" mnemonicParsing="false" onAction="#btn_load_OnAction" text="Load" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+              <children>
+                <Button id="btn_save" fx:id="btn_clear_id" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btn_clear_OnAction" text="Clear" textAlignment="LEFT" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+              <children>
+                <Button fx:id="btn_save_id" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn_save_OnAction" text="Save" />
+              </children>
+            </HBox>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="301.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.0" minWidth="10.0" prefWidth="298.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="301.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <Separator maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="900.0" visible="false" />
+      </children>
+    </VBox>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
